@@ -40,12 +40,13 @@
 
   <!-- Signup Form -->
   <div class="container pb-2 pt-2">
+    <h4 class="permissions-h4">Registered User List</h4>
     <!-- Modal Rights-->
     <div class="modal fade" data-bs-backdrop="static" id="rights-modal" tabindex="-1" aria-labelledby="rights-modalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close rights-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -56,7 +57,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Right g1 001
+                                        Draw
                                     </label>
                                 </div>
                             </div>
@@ -64,7 +65,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Right g1 002
+                                        Edit
                                     </label>
                                 </div>
                             </div>
@@ -72,7 +73,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Right g1 003
+                                        Delete
                                     </label>
                                 </div>
                             </div>
@@ -80,7 +81,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Right g1 004
+                                        Update
                                     </label>
                                 </div>
                             </div>
@@ -93,7 +94,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Right g2 001
+                                        Create User
                                     </label>
                                 </div>
                             </div>
@@ -101,7 +102,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Right g2 002
+                                        Delete User
                                     </label>
                                 </div>
                             </div>
@@ -109,7 +110,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Right g2 003
+                                        Update User
                                     </label>
                                 </div>
                             </div>
@@ -117,7 +118,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
-                                        Right g2 004
+                                       Assign Rights
                                     </label>
                                 </div>
                             </div>
@@ -223,41 +224,95 @@
         </div>
         </div>
     </div>
-    <table class="table">
+    <table class="table table-bordered">
         <thead>
           <tr>
-            <th scope="col">Application No:</th>
-            <th scope="col">User ID</th>
-            <th scope="col">Approved Date</th>
+            <th scope="col" class="table-w-15">Application No:</th>
+            <th scope="col" class="table-w-15">User ID</th>
+            <th scope="col" class="table-w-20">Approved Date</th>
             <th scope="col">Rights</th>
-            <th scope="col">Actions</th>
+            <th scope="col" class="table-w-15">Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>app_no:1</td>
-            <td>u_id:001_saman</td>
-            <td>2022-02-02</td>
+            <td class="table-w-15">app_no:1</td>
+            <td class="table-w-15">u_id:001_saman</td>
+            <td class="table-w-20">2022-02-02</td>
             <td>Draw,Edit,Delete,Update,Create User</td>
-            <td><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
                 <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
             </td>
           </tr>
           <tr>
-            <td>app_no:2</td>
-            <td>u_id:002_nimal</td>
-            <td>2022-02-02</td>
+            <td class="table-w-15">app_no:2</td>
+            <td class="table-w-15">u_id:002_nimal</td>
+            <td class="table-w-20">2022-02-02</td>
             <td>Draw,Update,Create User</td>
-            <td><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
                 <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
             </td>
           </tr>
           <tr>
-            <td>app_no:3</td>
-            <td>u_id:003_namal</td>
-            <td>2022-02-02</td>
+            <td class="table-w-15">app_no:3</td>
+            <td class="table-w-15">u_id:003_namal</td>
+            <td class="table-w-20">2022-02-02</td>
             <td>Draw,Edit,Delete,Update,Create User,Assign rights Draw,Edit,Delete,Update</td>
-            <td><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+                <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-w-15">app_no:1</td>
+            <td class="table-w-15">u_id:001_saman</td>
+            <td class="table-w-20">2022-02-02</td>
+            <td>Draw,Edit,Delete,Update,Create User</td>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+                <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-w-15">app_no:2</td>
+            <td class="table-w-15">u_id:002_nimal</td>
+            <td class="table-w-20">2022-02-02</td>
+            <td>Draw,Update,Create User</td>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+                <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-w-15">app_no:3</td>
+            <td class="table-w-15">u_id:003_namal</td>
+            <td class="table-w-20">2022-02-02</td>
+            <td>Draw,Edit,Delete,Update,Create User,Assign rights Draw,Edit,Delete,Update</td>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+                <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-w-15">app_no:1</td>
+            <td class="table-w-15">u_id:001_saman</td>
+            <td class="table-w-20">2022-02-02</td>
+            <td>Draw,Edit,Delete,Update,Create User</td>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+                <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-w-15">app_no:2</td>
+            <td class="table-w-15">u_id:002_nimal</td>
+            <td class="table-w-20">2022-02-02</td>
+            <td>Draw,Update,Create User</td>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
+                <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-w-15">app_no:3</td>
+            <td class="table-w-15">u_id:003_namal</td>
+            <td class="table-w-20">2022-02-02</td>
+            <td>Draw,Edit,Delete,Update,Create User,Assign rights Draw,Edit,Delete,Update</td>
+            <td class="table-w-15"><button class="btn border-only-blue" data-bs-toggle="modal" data-bs-target="#rights-modal">Assign Rights</button>
                 <button class="btn border-only-red" data-bs-toggle="modal" data-bs-target="#delete-modal">Remove</button>
             </td>
           </tr>
