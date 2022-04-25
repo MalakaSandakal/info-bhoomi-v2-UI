@@ -33,6 +33,7 @@ var bw_mc_section = $('.bw-mc-section');
 var export_section = $('.export-section');
 var import_section = $('.import-section');
 var print_section = $('.print-section');
+var data_store_section = $('.data-store-section');
 var sidebar_width = $('.sidebar-col').width();
 var sidebar_details_col = $('.sidebar-details-col');
 var map_section = $('.map-section');
@@ -814,6 +815,7 @@ $(document).ready(function () {
     save_section.addClass('hide-section');
     share_section.addClass('hide-section');
     bw_mc_section.addClass('hide-section');
+    data_store_section.addClass('hide-section');
   });
   $("#save-btn").click(function () {
     if (g_id) {
@@ -867,6 +869,7 @@ $(document).ready(function () {
     print_section.addClass('hide-section');
     save_section.addClass('hide-section');
     share_section.addClass('hide-section');
+    data_store_section.addClass('hide-section');
   });
   $("#import-btn").click(function () {    
     if (check_class) {
@@ -881,6 +884,7 @@ $(document).ready(function () {
     save_section.addClass('hide-section');
     share_section.addClass('hide-section');
     print_section.addClass('hide-section');
+    data_store_section.addClass('hide-section');
   });
   $("#print-btn").click(function(){
     if (check_class) {
@@ -894,6 +898,22 @@ $(document).ready(function () {
     bw_mc_section.addClass('hide-section');
     overview_section.addClass('hide-section');
     share_section.addClass('hide-section');
+    data_store_section.addClass('hide-section');
+  })
+  $("#data-store-btn").click(function(){
+    if (check_class) {
+      sidebar_details_col.removeClass('hide');
+    } else {
+      return;
+    }
+    data_store_section.removeClass('hide-section');
+    print_section.addClass('hide-section');
+    import_section.addClass('hide-section');
+    export_section.addClass('hide-section');
+    bw_mc_section.addClass('hide-section');
+    overview_section.addClass('hide-section');
+    share_section.addClass('hide-section');
+    save_section.addClass('hide-section');
   })
   /* end: Dashboard Content Change Dummy */
 

@@ -49,6 +49,8 @@
             </button>
             <button class="btn signin-btn" data-bs-toggle="modal" data-bs-target="#signin-modal">
               <i class="fas fa-unlock btn-icon"></i> Sign in or register </button>
+            <a href="permissions.html" class="btn signin-btn asp-btn">
+              <i class="fas fa-user-lock btn-icon"></i> Assign permissions </a>
           </div>
         </div>
       </div>
@@ -348,7 +350,7 @@
               <i class="fas fa-save sidebar-li-icon"></i> Print </button>
           </li>
           <li class="nav-item sidebar-list-item">
-            <button href="" id="share-btn" class="nav-link text-white">
+            <button href="" id="data-store-btn" class="nav-link text-white">
               <i class="fas fa-share sidebar-li-icon"></i> Data Store </button>
           </li>
         </ul>
@@ -1884,8 +1886,113 @@
                 <div class="col-md-4 form-label-col form-col custom-col-4">
                   <h5 class="label">Select MCs</h5>
                 </div>
-                <div class="col-md-8 form-col custom-col-8">
-                  <select class="form-select form-input" multiple aria-label="Default select example">
+                <div class="col-md-8 form-col">
+                  <select class="form-select form-input selector-custom-head" aria-label="Default select example">
+                    <option selected>Select province</option>
+                    <option value="1">Uva</option>
+                    <option value="2">Western</option>
+                    <option value="3">Southern</option>
+                  </select>
+                  <div class="hidden-check-sec">
+                    <!-- <h6 class="acc-h6 mb-0 mt-1">
+                      Select District
+                    </h6> -->
+                    <div class="accordion accordion-flush mt-0" id="accordionFlushExample">
+                      <div class="accordion-item accordion-small">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Badulla
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-1">
+                                  <label class="form-check-label" for="mc-1">
+                                    Bandarawela
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-2">
+                                  <label class="form-check-label" for="mc-2">
+                                    Haputale
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-3">
+                                  <label class="form-check-label" for="mc-3">
+                                    Diyathalawa
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-4">
+                                  <label class="form-check-label" for="mc-4">
+                                    Welimada
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item accordion-small">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Monaragala
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-1">
+                                  <label class="form-check-label" for="mc-1">
+                                    Bandarawela
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-2">
+                                  <label class="form-check-label" for="mc-2">
+                                    Haputale
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-3">
+                                  <label class="form-check-label" for="mc-3">
+                                    Diyathalawa
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-4">
+                                  <label class="form-check-label" for="mc-4">
+                                    Welimada
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <!-- <select class="form-select form-input" multiple aria-label="Default select example">
                     <option selected>Select from list</option>
                     <option value="1">MC 1</option>
                     <option value="2">MC 2</option>
@@ -1905,7 +2012,7 @@
                     <option value="1">MC 1</option>
                     <option value="2">MC 2</option>
                     <option value="3">MC 3</option>
-                  </select>
+                  </select> -->
                 </div>
               </div>
               <div class="row form-row">
@@ -1913,12 +2020,40 @@
                   <h5 class="label">Select Layers</h5>
                 </div>
                 <div class="col-md-8 form-col custom-col-8">
-                  <select class="form-select form-input" aria-label="Default select example">
-                    <option selected>Select from list</option>
-                    <option value="1">Layer 1</option>
-                    <option value="2">Layer 2</option>
-                    <option value="3">Layer 3</option>
-                  </select>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="layer-1">
+                        <label class="form-check-label" for="layer-1">
+                          Layer one
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="layer-2">
+                        <label class="form-check-label" for="layer-2">
+                          Layer two
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="layer-3">
+                        <label class="form-check-label" for="layer-3">
+                          Layer three
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="layer-4">
+                        <label class="form-check-label" for="layer-4">
+                          Layer four
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="row form-row">
@@ -1928,9 +2063,9 @@
                 <div class="col-md-8 form-col custom-col-8">
                   <select class="form-select form-input" aria-label="Default select example">
                     <option selected>Select from list</option>
-                    <option value="1">Format 1</option>
-                    <option value="2">Format 2</option>
-                    <option value="3">Format 3</option>
+                    <option value="1">Format One</option>
+                    <option value="2">Format Two</option>
+                    <option value="3">Format Three</option>
                   </select>
                 </div>
               </div>
@@ -1989,7 +2124,7 @@
                   <h5 class="label">Select Parcels</h5>
                 </div>
                 <div class="col-md-8 form-col">
-                  <button class="btn" type="button">
+                  <button class="btn btn-border-only" type="button">
                     Click to select parcels
                   </button>
                 </div>
@@ -1999,7 +2134,7 @@
                   <h5 class="label">Select Template</h5>
                 </div>
                 <div class="col-md-8 form-col">
-                  <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#print-template-select-modal">
+                  <button class="btn btn-border-only" type="button" data-bs-toggle="modal" data-bs-target="#print-template-select-modal">
                     Browse for a template
                   </button>
                 </div>
@@ -2071,12 +2206,135 @@
             <form action="">
               <div class="row form-row">
                 <div class="col-md-4 form-label-col form-col">
-                  <h5 class="label">Select Parcels</h5>
+                  <h5 class="label">Select Municipalities</h5>
                 </div>
                 <div class="col-md-8 form-col">
-                  <button class="btn" type="button">
-                    Click to select parcels
-                  </button>
+                  <select class="form-select form-input selector-custom-head" aria-label="Default select example">
+                    <option selected>Select province</option>
+                    <option value="1">Uva</option>
+                    <option value="2">Western</option>
+                    <option value="3">Southern</option>
+                  </select>
+                  <div class="hidden-check-sec">
+                    <!-- <h6 class="acc-h6 mb-0 mt-1">
+                      Select District
+                    </h6> -->
+                    <div class="accordion accordion-flush mt-0" id="accordionFlushExample">
+                      <div class="accordion-item accordion-small">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Badulla
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-1">
+                                  <label class="form-check-label" for="mc-1">
+                                    Bandarawela
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-2">
+                                  <label class="form-check-label" for="mc-2">
+                                    Haputale
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-3">
+                                  <label class="form-check-label" for="mc-3">
+                                    Diyathalawa
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-4">
+                                  <label class="form-check-label" for="mc-4">
+                                    Welimada
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item accordion-small">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Monaragala
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-1">
+                                  <label class="form-check-label" for="mc-1">
+                                    Bandarawela
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-2">
+                                  <label class="form-check-label" for="mc-2">
+                                    Haputale
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-3">
+                                  <label class="form-check-label" for="mc-3">
+                                    Diyathalawa
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="mc-4">
+                                  <label class="form-check-label" for="mc-4">
+                                    Welimada
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <!-- <select class="form-select form-input" multiple aria-label="Default select example">
+                    <option selected>Select from list</option>
+                    <option value="1">MC 1</option>
+                    <option value="2">MC 2</option>
+                    <option value="3">MC 3</option>
+                    <option value="1">MC 1</option>
+                    <option value="2">MC 2</option>
+                    <option value="3">MC 3</option>
+                    <option value="1">MC 1</option>
+                    <option value="2">MC 2</option>
+                    <option value="3">MC 3</option>
+                    <option value="1">MC 1</option>
+                    <option value="2">MC 2</option>
+                    <option value="3">MC 3</option>
+                    <option value="1">MC 1</option>
+                    <option value="2">MC 2</option>
+                    <option value="3">MC 3</option>
+                    <option value="1">MC 1</option>
+                    <option value="2">MC 2</option>
+                    <option value="3">MC 3</option>
+                  </select> -->
                 </div>
               </div>
               <div class="row form-row">
@@ -2084,69 +2342,100 @@
                   <h5 class="label">Select Data Types</h5>
                 </div>
                 <div class="col-md-8 form-col">
-                  <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#print-template-select-modal">
-                    Browse for a template
-                  </button>
+                  <div class="row">
+                    <div class="col-md-6 col-6-custom-sidebar">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="data-type-1">
+                        <label class="form-check-label" for="data-type-1">
+                          Data type one
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-6-custom-sidebar">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="data-type-2">
+                        <label class="form-check-label" for="data-type-2">
+                          Data type two
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-6-custom-sidebar">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="data-type-3">
+                        <label class="form-check-label" for="data-type-3">
+                          Data type three
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-6-custom-sidebar">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="data-type-4">
+                        <label class="form-check-label" for="data-type-4">
+                          Data type four
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="row form-row">
                 <div class="col-md-4 form-label-col form-col">
-                  <h5 class="label">Select Scale</h5>
+                  <h5 class="label">Select Access Type</h5>
                 </div>
                 <div class="col-md-8 form-col">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                  <div class="row">
+                    <div class="col-md-6 col-6-custom-sidebar">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="access-type-1">
+                        <label class="form-check-label" for="access-type-1">
+                          Access type one
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-6-custom-sidebar">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="access-type-2">
+                        <label class="form-check-label" for="access-type-2">
+                          Access type two
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-6-custom-sidebar">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="access-type-3">
+                        <label class="form-check-label" for="access-type-3">
+                          Access type three
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-6-custom-sidebar">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="access-type-4">
+                        <label class="form-check-label" for="access-type-4">
+                          Access type four
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="row form-row">
                 <div class="col-md-4 form-label-col form-col">
-                  <h5 class="label">Select Format</h5>
+                  <h5 class="label">Your Email</h5>
                 </div>
                 <div class="col-md-8 form-col">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                  <input type="email" class="val-new" placeholder="your email here">
                 </div>
               </div>
               <div class="row form-row">
                 <div class="col-md-4 form-label-col form-col">
-                  <h5 class="label">Select Data</h5>
+                  <h5 class="label">Phone</h5>
                 </div>
                 <div class="col-md-8 form-col">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="data-type-1">
-                    <label class="form-check-label" for="data-type-1">
-                      Data type 1
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="data-type-2">
-                    <label class="form-check-label" for="data-type-2">
-                      Data type 2
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="data-type-3">
-                    <label class="form-check-label" for="data-type-3">
-                      Data type 3
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="data-type-4">
-                    <label class="form-check-label" for="data-type-4">
-                      Data type 4
-                    </label>
-                  </div>
+                  <input type="text" class="val-new" placeholder="your phone here">
                 </div>
               </div>
-              <button class="btn btn-save">Print</button>
+              <button class="btn btn-save">Send</button>
             </form>
           </div>
           <!-- end: Data Store Section -->
@@ -3956,15 +4245,26 @@
               </div>
             </div>
           </div>
-          <button class="btn tool-btn"><i class="fas fa-search-plus"></i>ZOOM LEVEL</button>
+          <button class="btn tool-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" ><i class="fas fa-search-plus"></i>ZOOM LEVEL</button>
+            <div class="dropdown-menu dropdown-menu-block zoom-level-dropdown">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+              </div>              
+              <small>Zoom Level <b>25%</b></small>
+              <small>Active Basemap <b>BingMaps</b></small>
+            </div>
           <button class="btn tool-btn"><i class="fas fa-reply"></i>BACK</button>
-          <button class="btn tool-btn"><i class="fas fa-puzzle-piece"></i>VERTICAL LEVEL</button>
+          <!-- <button class="btn tool-btn"><i class="fas fa-puzzle-piece"></i>VERTICAL LEVEL</button> -->
           <div class="btn-group">
             <button class="btn tool-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" ><i class="fas fa-layer-group"></i>LAYERS</button>
             <div class="dropdown-menu dropdown-menu-block layers-selector-dropdown">
               <div class="display-inline">
-                <button class="btn layer-btn">OSM</button>              
-                <button class="btn layer-btn">BingMaps</button> 
+                <div class="col-md-6">
+                  <button class="btn layer-btn">OSM</button>   
+                </div>        
+                <div class="col-md-6">
+                  <button class="btn layer-btn">BingMaps</button> 
+                </div>                  
               </div>
               <hr>
               <div class="options-section">
@@ -4212,4 +4512,4 @@
     </script>
 
   </body>
-</htm
+</html>

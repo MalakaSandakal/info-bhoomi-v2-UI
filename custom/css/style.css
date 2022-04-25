@@ -442,18 +442,18 @@ body {
       margin-right: 0px !important;
       font-size: 18px;
   }
-  .sign-up-form form .row .col-md-3,.sign-up-form form .row .col-md-9{
+  .sign-up-form form .row .col-md-5,.sign-up-form form .row .col-md-9{
     margin-top: 20px;
   }
-  .sign-up-form form .row .col-md-3{
+  .sign-up-form form .row .col-md-5{
     display: flex;
     align-items: center;
   }
-  .sign-up-form form .row .col-md-3 h5{
+  .sign-up-form form .row .col-md-5 h5{
     font-size: 15px;
     letter-spacing: 00.015rem;
   }
-  .sign-up-form form .row .col-md-9 input,.sign-up-form form .row .col-md-9 .form-select{
+  .sign-up-form form .row .col-md-7 input,.sign-up-form form .row .col-md-7 .form-select{
     font-size: 15px;
     font-weight: 550;
     letter-spacing: 000.025rem;
@@ -477,8 +477,10 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #ececec;
     background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .signup-submit-btn{
     float: right;
@@ -650,9 +652,12 @@ body {
     padding-bottom: 2px;
     margin-left: auto;
   }
-  .signup-body{
+  #signup-body{
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,95,134,1) 100%);
-    height: 95vh;
+  }
+  .signup-body{
+    /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,95,134,1) 100%); */
+    /* height: 100vh; */
     display: flex;
     align-items: center;
   }
@@ -1008,6 +1013,160 @@ body {
 }
 .custom-file-label{
     cursor: pointer;
+}
+.btn-border-only{
+  width: 100%;
+  border: 1px solid #8080805c;
+  color: #212529;
+  background-color: #fff;
+  border-radius: .25rem;
+
+}
+.dropdown-menu-block{
+  background: white;
+}
+.zoom-level-dropdown.show{
+  width: 15vw;
+  display: grid;
+}
+.progress-bar{
+  background-color: #005f86;
+}
+.progress{
+  border-radius: 0px;
+  margin-bottom: 5px;
+}
+.accordion-small button{
+  font-size: 14px;
+  letter-spacing: 00.035rem;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+.accordion-small button::after{
+  /* background-image: none;
+  content: '\f078';
+  font-family: 'FontAwesome';
+  width: auto;
+  height: auto; */
+  width: 0.75rem;
+  height: 0.75rem;
+  background-size: 0.75rem;
+}
+.hidden-check-sec{
+  padding: 5px;
+  border-left: 1px solid rgba(0,0,0,.25);
+  border-right: 1px solid rgba(0,0,0,.25);
+  border-bottom: 1px solid rgba(0,0,0,.25);
+  border-top: none;
+}
+.acc-h6{
+  font-size: 14px;
+  padding-left: 5px;
+  display: none;
+}
+.hidden-check-sec .accordion{
+  border:none;
+  padding: 0px;
+}
+.hidden-check-sec .accordion .accordion-item{
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.hidden-check-sec .accordion .accordion-body{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.hidden-check-sec .accordion .form-check-label{
+  font-size: 13.5px;
+  margin-left: -5px;
+}
+.hidden-check-sec .accordion .form-check-input{
+  width: 13px;
+  height: 13px;
+}
+.selector-custom-head{
+  background-color: #e9e9e92e;
+  color: black;
+  font-size: 15px;
+}
+.col-6-custom-sidebar{
+  padding-right: 5px;
+}
+.col-6-custom-sidebar label{
+  font-size: 15px;
+}
+.val-new{
+  width: 100%;
+  border: 1px solid #ced4da;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  font-size: .875rem;
+  padding-left: .5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.custom-p-4{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.border-only-blue{
+  border: 1px solid #005f86;
+  color: #005f86;
+  background: transparent;
+  padding: 2px 5px;
+  font-size: 14px;
+}
+.border-only-red{
+  border: 1px solid red;
+  color: red;
+  background: transparent;
+  padding: 2px 5px;
+  font-size: 14px;
+}
+.border-only-red:hover{
+  background: red;
+}
+.table>:not(caption)>*>*{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-color:#86868634;
+}
+.table{
+  margin-top: 50px;
+}
+#rights-modal h3{
+  font-size: 17px;
+  text-decoration: underline;
+}
+#rights-modal .form-check-label{
+  font-size: 15px;
+}
+#rights-modal .col-md-12.mb-3{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 10px !important;
+  border-bottom: 1px solid rgb(213 209 209 / 25%);
+}
+#rights-modal .col-md-12.mb-3 .row{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#rights-modal .modal-header{
+  border-bottom: none;
+  height: 5px;
+  padding: 10px;
+}
+#rights-modal .modal-footer{
+  border-top: none;
+}
+#rights-modal .form-check{
+  margin-top: 15px;
 }
   @media(max-width:1440px){
     .sidebar-details-col{

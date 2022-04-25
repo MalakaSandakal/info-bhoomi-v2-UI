@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body id="signup-body">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light top-nav">
     <div class="container-fluid">
@@ -68,16 +68,22 @@
 
   <!-- Signup Form -->
   <div class="container-fluid pb-2 pt-2 signup-body">
-    <div class="col-md-4 sign-up-form-col">
+    <div class="col-md-5 sign-up-form-col">
       <div class="sign-up-form">
         <h2 class="text-center pb-3">Signup Here</h2>
         <form action="">
-          <div class="row p-4">
-
-            <div class="col-md-3">
-              <h5 class="form-label">User Type :</h5>
+          <div class="row custom-p-4">
+            <div class="col-md-5">
+              <h5 class="form-label">User Name :</h5>
             </div>
-            <div class="col-md-9 ">
+            <div class="col-md-7">
+              <input type="text" class="form-control" id="name-input" aria-describedby="name-input">
+            </div>
+
+            <div class="col-md-5">
+              <h5 class="form-label">User Role Type :</h5>
+            </div>
+            <div class="col-md-7 ">
               <select class="form-select" aria-label="Default select example">
                 <option selected>User Type 1</option>
                 <option value="1">User Type 2</option>
@@ -86,52 +92,92 @@
               </select>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-5">
               <h5 class="form-label">Province :</h5>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-7">
               <input type="text" class="form-control" id="province-input" aria-describedby="province-input">
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-5">
               <h5 class="form-label">District :</h5>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-7">
               <input type="text" class="form-control" id="district-input" aria-describedby="district-input">
             </div>
 
-            <div class="col-md-3">
-              <h5 class="form-label">MC :</h5>
+            <div class="col-md-5">
+              <h5 class="form-label">Divisional Secretariat :</h5>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-7">
+              <input type="text" class="form-control" id="district-input" aria-describedby="district-input">
+            </div>
+
+            <div class="col-md-5">
+              <h5 class="form-label">Organization Type :</h5>
+            </div>
+            <div class="col-md-7 ">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Organization Type 1</option>
+                <option value="1">Organization Type 2</option>
+                <option value="2">Organization Type 3</option>
+                <option value="3">Organization Type 4</option>
+              </select>
+            </div>
+
+            <div class="col-md-5">
+              <h5 class="form-label">Organization Name :</h5>
+            </div>
+            <div class="col-md-7">
               <input type="text" class="form-control" id="mc-input" aria-describedby="mc-input">
             </div>
 
-            <div class="col-md-3">
-              <h5 class="form-label">Name :</h5>
+            <div class="col-md-5">
+              <h5 class="form-label">Department/Branch Name :</h5>
             </div>
-            <div class="col-md-9">
-              <input type="text" class="form-control" id="name-input" aria-describedby="name-input">
+            <div class="col-md-7">
+              <input type="text" class="form-control" id="mc-input" aria-describedby="mc-input">
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-5">
+              <h5 class="form-label">Section Name :</h5>
+            </div>
+            <div class="col-md-7">
+              <input type="text" class="form-control" id="mc-input" aria-describedby="mc-input">
+            </div>
+
+            <div class="col-md-5">
+              <h5 class="form-label">User ID :</h5>
+            </div>
+            <div class="col-md-7">
+              <input type="text" class="form-control" id="mc-input" aria-describedby="mc-input">
+            </div>
+
+            <div class="col-md-5">
+              <h5 class="form-label">Upload Authentication Letter :</h5>
+            </div>
+            <div class="col-md-7">
+              <input type="file" class="form-control">
+            </div>
+
+            <div class="col-md-5">
               <h5 class="form-label">Telephone :</h5>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-7">
               <input type="text" class="form-control" id="mc-input" aria-describedby="mc-input">
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-5">
               <h5 class="form-label">Email :</h5>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-7">
               <input type="email" class="form-control" id="email-input" aria-describedby="email-input">
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-5">
               <h5 class="form-label">Address :</h5>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-7">
               <textarea name="Address" id="address-input"></textarea>
             </div>
 
