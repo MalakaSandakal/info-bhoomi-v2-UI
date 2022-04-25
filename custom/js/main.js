@@ -34,6 +34,9 @@ var export_section = $('.export-section');
 var import_section = $('.import-section');
 var print_section = $('.print-section');
 var data_store_section = $('.data-store-section');
+var display_mcs_btn = $('.display-mcs-btn');
+var zoom_level_btn = $('.zoom-level-btn');
+var layers_btn = $('.layers-btn');
 var sidebar_width = $('.sidebar-col').width();
 var sidebar_details_col = $('.sidebar-details-col');
 var map_section = $('.map-section');
@@ -915,6 +918,20 @@ $(document).ready(function () {
     share_section.addClass('hide-section');
     save_section.addClass('hide-section');
   })
+  $('.sidebar-col').click(function(){
+    $('.dropdown-menu').each(function(){
+      $(this).removeClass('show');
+    });
+    $('.tool-btn').each(function(){
+      $(this).removeClass('show');
+    });
+  });
+  $('.display-mcs-btn').click(function(){
+    $('.tool-btn').each(function(){
+      // $(this).removeClass('show');
+    });
+    $('.zoom-level-dropdown ').removeClass('show');
+  });
   /* end: Dashboard Content Change Dummy */
 
 });

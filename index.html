@@ -155,13 +155,13 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="print-template-select-modal-label">Modal title</h5>
+            <h5 class="modal-title" id="print-template-select-modal-label">Select Template</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="row">
               <div class="col-md-4">
-                <div class="">
+                <div class="print-template">
                   <div class="template-prev">
 
                   </div>
@@ -173,30 +173,34 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="">
+                <div class="print-template">
                   <div class="template-prev">
-                    
+
                   </div>
-                  <label class="">
-                    Template 2
-                  </label>
+                  <div class="template-selector-sec">
+                    <label class="" for="">
+                      Template 2
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="">
+                <div class="print-template">
                   <div class="template-prev">
-                    
+
                   </div>
-                  <label class="" for="">
-                    Template  3
-                  </label>
+                  <div class="template-selector-sec">
+                    <label class="" for="">
+                      Template 3
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Understood</button>
+            <button type="button" class="btn btn-primary">Select</button>
           </div>
         </div>
       </div>
@@ -4192,7 +4196,7 @@
       <div class="d-flex flex-column flex-shrink-0 text-white bg-dark map-section map" id="mymap">
         <div class="map-toolbar-sec">
           <div class="btn-group">
-            <button class="btn tool-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false"><i class="fas fa-globe"></i></i>DISPLAY MCs</button>
+            <button class="btn tool-btn dropdown-toggle display-mcs-btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false"><i class="fas fa-globe"></i></i>DISPLAY MCs</button>
             <div class="dropdown-menu mcs-dropdown-menu">
               <div class="mc-selector-main">
                 <div class="accordion" id="accordionExample-dmcs">
@@ -4245,7 +4249,7 @@
               </div>
             </div>
           </div>
-          <button class="btn tool-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" ><i class="fas fa-search-plus"></i>ZOOM LEVEL</button>
+          <button class="btn tool-btn dropdown-toggle zoom-level-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" ><i class="fas fa-search-plus"></i>ZOOM LEVEL</button>
             <div class="dropdown-menu dropdown-menu-block zoom-level-dropdown">
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
@@ -4256,7 +4260,7 @@
           <button class="btn tool-btn"><i class="fas fa-reply"></i>BACK</button>
           <!-- <button class="btn tool-btn"><i class="fas fa-puzzle-piece"></i>VERTICAL LEVEL</button> -->
           <div class="btn-group">
-            <button class="btn tool-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" ><i class="fas fa-layer-group"></i>LAYERS</button>
+            <button class="btn tool-btn dropdown-toggle layers-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" ><i class="fas fa-layer-group"></i>LAYERS</button>
             <div class="dropdown-menu dropdown-menu-block layers-selector-dropdown">
               <div class="display-inline">
                 <div class="col-md-6">

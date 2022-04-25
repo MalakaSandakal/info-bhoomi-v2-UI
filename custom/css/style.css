@@ -1120,6 +1120,10 @@ body {
   padding: 2px 5px;
   font-size: 14px;
 }
+.border-only-blue:focus{
+  background: #005f86;
+  color: white;
+}
 .border-only-red{
   border: 1px solid red;
   color: red;
@@ -1130,6 +1134,10 @@ body {
 .border-only-red:hover{
   background: red;
 }
+.border-only-red:focus{
+  background: red;
+  color: white;
+}
 .table>:not(caption)>*>*{
   padding-top: 15px;
   padding-bottom: 15px;
@@ -1137,10 +1145,22 @@ body {
 }
 .table{
   margin-top: 50px;
+  margin-bottom: 50px;
+  border-left: 1px solid #86868634;
+  border-right: 1px solid #86868634;
+}
+th{
+  font-weight: 550;
+  text-align: center;
+}
+td{
+  text-align: center;
+  color: darkslategrey;
 }
 #rights-modal h3{
   font-size: 17px;
   text-decoration: underline;
+  font-weight: 700;
 }
 #rights-modal .form-check-label{
   font-size: 15px;
@@ -1167,6 +1187,16 @@ body {
 }
 #rights-modal .form-check{
   margin-top: 15px;
+}
+.template-prev{
+  margin-left: auto;
+  margin-right: auto;
+}
+.template-selector-sec{
+  text-align: center;
+}
+.print-template{
+  cursor: pointer;
 }
   @media(max-width:1440px){
     .sidebar-details-col{
