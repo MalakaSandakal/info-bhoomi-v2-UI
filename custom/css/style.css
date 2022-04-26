@@ -1013,6 +1013,17 @@ body {
     height: 1px !important;
     display: none;
 }
+/* #slider{
+  background: #111;
+  outline: none;
+  overflow-y: hidden;
+  height: 15px;
+}
+#slider::-webkit-slider-thumb{
+  height: 15px;
+  background: #005f86;
+  box-shadow: -407px 0 0 400px #004561;
+} */
 .custom-file-label{
     cursor: pointer;
     width: 100%;
@@ -1040,8 +1051,19 @@ body {
   background: white;
 }
 .zoom-level-dropdown.show{
-  width: 15vw;
+  width: 18vw;
   display: grid;
+}
+.progress input{
+  width: 100%;
+}
+.layer-selector-zoom{
+  background-color: #3399cc45;
+  border-radius: 3px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 .progress-bar{
   background-color: #005f86;
@@ -1253,6 +1275,34 @@ td{
 .file-list li{
   font-size: 13px;
   padding-top: 2px;
+}
+.layer-options-accordion .accordion-body{
+  padding-bottom: 0px;
+}
+.layer-options-accordion .dashboard-details-sec{
+  margin-bottom: 0px;
+  border-bottom: none;
+}
+.layer-options-accordion .accordion-button{
+  background-color: #005f86;
+}
+.layer-options-accordion .accordion-button::after{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.layer-options-accordion .accordion-button h3.dashboard-h3{
+  color: white;
+}
+.layer-options-accordion .accordion-button.collapsed{
+  background-color: white;
+}
+.layer-options-accordion .accordion-button.collapsed::after{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.layer-options-accordion .accordion-item .accordion-header{
+  border: 1px solid #005f86;
+}
+.layer-options-accordion .accordion-button.collapsed h3.dashboard-h3{
+  color: black;
 }
   @media(max-width:1440px){
     .sidebar-details-col{

@@ -361,7 +361,7 @@
       </div>
       <!-- Dashboard -->
       <div class="d-flex flex-column flex-shrink-0 p-3 bg-light sidebar-details-col hide">
-        <small class="boundary-text">Boundary</small>
+        <small class="boundary-text">Parcel ID</small>
         <div class="sidebar-det-top-sec">
           <h6 id="p_id_" class="boundary-title">Badulla</h6>
           <button class="btn btn-sidebar-det-close">
@@ -4252,10 +4252,41 @@
           <button class="btn tool-btn dropdown-toggle zoom-level-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="false" ><i class="fas fa-search-plus"></i>ZOOM LEVEL</button>
             <div class="dropdown-menu dropdown-menu-block zoom-level-dropdown">
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                <input type="range" id="slider" name="" 
+                min="0" max="100" value="90" step="1">
+                <!-- <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div> -->
               </div>              
               <small>Zoom Level <b>25%</b></small>
-              <small>Active Basemap <b>BingMaps</b></small>
+              <!-- <small class="mt-2">Active Basemap</small> -->
+              <div class="layer-selector-zoom">
+                <small class="mt-2">Active Basemap</small>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-check label-left">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        <small>BingMaps</small> 
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-check label-left">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                       <small>High Resolution</small> 
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-check label-left">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                       <small>OSM</small> 
+                      </label>
+                    </div>
+                  </div>
+                </div> 
+              </div>                           
             </div>
           <button class="btn tool-btn btn-back"><i class="fas fa-reply"></i>BACK</button>
           <!-- <button class="btn tool-btn"><i class="fas fa-puzzle-piece"></i>VERTICAL LEVEL</button> -->
@@ -4272,14 +4303,14 @@
               </div>
               <hr>
               <div class="options-section">
-                <div class="accordion accordion-flush" id="accordionExample-layers">
+                <div class="accordion accordion-flush layer-options-accordion" id="accordionExample-layers">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-new-1" aria-expanded="false" aria-controls="collapse-new-1">
+                      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapse-new-1" aria-expanded="true" aria-controls="collapse-new-1">
                         <h3 class="dashboard-h3">MC Areas</h3>
                       </button>
                     </h2>
-                    <div id="collapse-new-1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample-layers">
+                    <div id="collapse-new-1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample-layers">
                       <div class="accordion-body">
                         <form action="">
                           <div class="licenses-fees">
@@ -4337,14 +4368,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion accordion-flush" id="accordionExample-lu-info">
+                <div class="accordion accordion-flush layer-options-accordion" id="accordionExample-lu-info">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-new-2" aria-expanded="false" aria-controls="collapse-new-2">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-new-2" aria-expanded="true" aria-controls="collapse-new-2">
                         <h3 class="dashboard-h3">Land Use Information</h3>
                       </button>
                     </h2>
-                    <div id="collapse-new-2" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample-lu-info">
+                    <div id="collapse-new-2" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample-lu-info">
                       <div class="accordion-body">
                         <form action="">
                           <div class="licenses-fees">
@@ -4402,14 +4433,14 @@
                     </div>
                   </div>
                 </div>
-                <div class="accordion accordion-flush" id="accordionExample-el">
+                <div class="accordion accordion-flush layer-options-accordion" id="accordionExample-el">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-new-3" aria-expanded="false" aria-controls="collapse-new-3">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-new-3" aria-expanded="true" aria-controls="collapse-new-3">
                         <h3 class="dashboard-h3">Electricity Lines</h3>
                       </button>
                     </h2>
-                    <div id="collapse-new-3" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample-el">
+                    <div id="collapse-new-3" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample-el">
                       <div class="accordion-body">
                         <form action="">
                           <div class="licenses-fees">

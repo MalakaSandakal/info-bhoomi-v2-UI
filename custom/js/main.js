@@ -892,7 +892,7 @@ $(document).ready(function () {
     share_section.addClass('hide-section');
     data_store_section.addClass('hide-section');
     $('.boundary-text').addClass('hide-section');
-    $('.sidebar-det-top-sec').addClass('hide-section');
+    // $('.sidebar-det-top-sec').addClass('hide-section');
   });
   $("#import-btn").click(function () {    
     if (check_class) {
@@ -909,7 +909,7 @@ $(document).ready(function () {
     print_section.addClass('hide-section');
     data_store_section.addClass('hide-section');
     $('.boundary-text').addClass('hide-section');
-    $('.sidebar-det-top-sec').addClass('hide-section');
+    // $('.sidebar-det-top-sec').addClass('hide-section');
   });
   $("#print-btn").click(function(){
     if (check_class) {
@@ -925,7 +925,7 @@ $(document).ready(function () {
     share_section.addClass('hide-section');
     data_store_section.addClass('hide-section');
     $('.boundary-text').addClass('hide-section');
-    $('.sidebar-det-top-sec').addClass('hide-section');
+    // $('.sidebar-det-top-sec').addClass('hide-section');
   })
   $("#data-store-btn").click(function(){
     if (check_class) {
@@ -942,7 +942,7 @@ $(document).ready(function () {
     share_section.addClass('hide-section');
     save_section.addClass('hide-section');
     $('.boundary-text').addClass('hide-section');
-    $('.sidebar-det-top-sec').addClass('hide-section');
+    // $('.sidebar-det-top-sec').addClass('hide-section');
   })
   $('.sidebar-col').click(function(){
     $('.dropdown-menu').each(function(){
