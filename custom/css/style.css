@@ -1163,6 +1163,14 @@ body {
   background: #005f86;
   color: white;
 }
+
+.show-form-btn{
+  color: #28a745;
+}
+.show-form-btn:focus,.show-form-btn:hover{
+  background: #28a745;
+  color: white;
+}
 .border-only-red{
   border: none;
   color: red;
@@ -1181,6 +1189,7 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   border-color:#86868634;
+  vertical-align: middle;
 }
 .table{
   margin-top: 20px;
